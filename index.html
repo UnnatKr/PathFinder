@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>Path Finder</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <section>
+            <h1 class="logo">Path Finder</h1>
+            <span id="start_button"><button id="start">Start!!</button></span>
+
+            <div id="right_menu">
+                <button id="createMaze">Create Maze</button>
+                <button id="clearMaze">Clear Maze</button>
+                <select name="maze-solving-algorithm" id="mazeSolvingAlgorithm">
+                    <option class="option" value="astar">A* algorithm</option>
+                    <option class="option" value="bestFirst">Greedy Best First Search</option>
+                    <option class="option" value="uniformCost">Uniform Cost Search</option>
+                    <option class="option" value="bfs">Breadth First Search</option>
+                    <option class="option" value="dfs">Depth First Search</option>
+                </select>
+            </div>
+        </section>
+    </nav>
+
+    <!-- Instructions -->
+    <div class="instructions">
+        <div class="start-end-instruction">
+            <div class="start-icon">Start -><i class="fa-solid fa-location-crosshairs icon"></i></div>
+            <div class="end-icon">End -><i class="fa-solid fa-location-dot icon"></i></div>
+        </div>
+        <div class="wall-instruction">Click and hold to create and remove walls</div>
+        <div class="move-instruction">Click and hold to move start and end</div>
+    </div>
+
+    <!-- Grid Container -->
+    <div id="main-container">
+        <div id="container"></div>
+    </div>
+
+    <!-- Font-awesome -->
+    <script src="https://kit.fontawesome.com/d599e7fc23.js" crossorigin="anonymous"></script>
+    
+    <!-- Scripts -->
+    <script src="./js/utility.js"></script>
+    <script src="./js/mazeSolvingAlgorithms/Astar.js"></script>
+    <script src="./js/mazeSolvingAlgorithms/greedyBestFirstSearch.js"></script>
+    <script src="./js/mazeSolvingAlgorithms/uniformCostSearch.js"></script>
+    <script src="./js/mazeSolvingAlgorithms/bfs.js"></script>
+    <script src="./js/mazeSolvingAlgorithms/dfs.js"></script>
+    <script src="./js/mazeCreationAlgorithms/createMaze.js"></script>
+    <script src="./js/index.js"></script>
+</body>

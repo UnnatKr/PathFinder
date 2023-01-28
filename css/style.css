@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&family=Poppins:wght@400;500&family=Radio+Canada:wght@400;500&family=Readex+Pro:wght@400;500;600&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: lightblue;
+  width: 100vw;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  margin-top: 0;
+}
+
+h1 {
+  padding: 3% 2%;
+  margin-bottom: 0px;
+  font-size: 2.5rem;
+}
+
+button {
+  margin: 0 10px;
+  outline: none;
+  border: 2px solid white;
+  background-color: coral;
+  height: 35px;
+  width: 95px;
+  border-radius: 8px;
+}
+
+button:hover {
+  cursor: pointer;
+  border-color: coral;
+  background-color: white;
+  color: coral;
+}
+
+select {
+  margin: 0 5px;
+  padding: 5px;
+  border-radius: 6px;
+}
+
+option {
+  text-align: center;
+}
+
+#start_button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 0;
+}
+
+#start {
+  margin: 10px 0;
+  padding: 0;
+  font-size: 1.2rem;
+  width: 90px;
+}
+
+#right_menu {
+  margin: 10px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#changeMaze {
+  width: 130px;
+}
+
+#clearMaze {
+  width: 110px;
+}
+
+#main-container {
+  display: flex;
+  justify-content: center;
+}
+
+#container {
+  margin: 5vh 4vw 0 8vw;
+  width: 94vw;
+  height: 75vh;
+}
+
+.instructions {
+  display: flex;
+  font-size: 1.1rem;
+  justify-content: space-between;
+  margin: 10px 10%;
+}
+
+.start-end-instruction {
+  display: flex;
+  min-width: 200px;
+  justify-content: space-between;
+}
+
+.row {
+  display: flex;
+}
+
+.node {
+  outline: 1px solid #000;
+  height: 30px;
+  width: 30px;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+
+.wall {
+  background-color: rgba(0, 0, 0, 0.95);
+  animation: generateNode 1s;
+}
+
+.visited {
+  background-color: green;
+  animation: generateNode 1s;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  font-size: 1.3rem;
+  text-align: center;
+  color: blue;
+  animation: generateNode 1s;
+}
+
+.up {
+  transform: rotate(-90deg);
+}
+
+.down {
+  transform: rotate(90deg);
+}
+
+.left {
+  transform: rotate(180deg);
+}
+
+@keyframes generateNode {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
