@@ -5,16 +5,16 @@ link : https://unnatkr.github.io/PathFinder/
 
 # Initial Page
 
-![image](./images/Initial.png)
+<img src="./images/Initial.png" alt="images">
 
 # With Maze
 
-![image](./images/With_Maze.png)
+<img src="./images/With_Maze.png" alt="images">
 
 # Solving
 
-![image](./images/Solving.png)
+<img src="./images/Solving.png" alt="images">
 
 # Final Results
 
-![image](./images/Final.png)
+<img src="./images/Final.png" alt="images">
